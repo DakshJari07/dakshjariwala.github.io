@@ -138,14 +138,14 @@
 
         <section class="about-text">
           <p>
-            I am a Dean's List Computer Science student at Lakehead University with hands-on experience in business analysis,
-            data validation, Power BI reporting, SQL, Excel, QA/UAT support, technical troubleshooting, and workflow documentation.
+            I am a Dean’s List Computer Science student at Lakehead University with hands-on experience in business analysis,
+            data validation, Power BI reporting, SQL, Excel, QA/UAT support, workflow documentation, and software projects.
           </p>
 
           <p>
             I enjoy solving practical business and technical problems by cleaning data, building dashboards, documenting workflows,
-            and creating user-focused solutions. My goal is to grow into data, business analysis, and IT-focused roles where I can
-            support better decisions through technology and structured problem-solving.
+            developing applications, and translating findings into clear recommendations. My goal is to grow into data, business analysis,
+            IT, and software-focused roles where I can support better decisions through technology and structured problem-solving.
           </p>
         </section>
 
@@ -170,7 +170,7 @@
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="dashboard reporting icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="dashboard icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -183,26 +183,26 @@
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="business analysis icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="software development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Business Analysis</h4>
+                <h4 class="h4 service-item-title">Software Projects</h4>
                 <p class="service-item-text">
-                  Gathering requirements, documenting workflows, supporting QA/UAT, and improving business processes.
+                  Developing interactive projects using HTML, CSS, JavaScript, Unity, C#, HaxeFlixel, and OpenFL.
                 </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="software development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="technical support icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software & Game Projects</h4>
+                <h4 class="h4 service-item-title">IT Support</h4>
                 <p class="service-item-text">
-                  Building interactive projects using HTML, CSS, JavaScript, Unity, C#, HaxeFlixel, and OpenFL.
+                  Supporting users with setup, troubleshooting, application configuration, and clear technical guidance.
                 </p>
               </div>
             </li>
@@ -349,22 +349,33 @@
             <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">HTML, CSS, JavaScript</h5>
-                <data value="80">80%</data>
+                <data value="75">75%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <div class="skill-progress-fill" style="width: 75%;"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Unity, C#, HaxeFlixel, OpenFL</h5>
-                <data value="75">75%</data>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">IT Support & Troubleshooting</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
             </li>
 
@@ -383,9 +394,62 @@
 
         <section class="projects">
 
+          <!-- Keep these filters because the template JavaScript expects them -->
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Game Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analytics</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Game Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analytics</button>
+              </li>
+
+            </ul>
+
+          </div>
+
           <ul class="project-list">
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="game development">
               <a href="https://github.com/DakshJari07/game-development-portfolio" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -402,7 +466,7 @@
               </a>
             </li>
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="game development">
               <a href="https://github.com/DakshJari07/game-development-portfolio/tree/main/FPS%20Game" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -419,7 +483,7 @@
               </a>
             </li>
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="game development">
               <a href="https://github.com/DakshJari07/game-development-portfolio/tree/main/Bubble%20Shooter%20Game" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -431,12 +495,12 @@
                 </figure>
 
                 <h3 class="project-title">Bubble Shooter Game</h3>
-                <p class="project-category">HaxeFlixel, Grid Logic, Collision</p>
+                <p class="project-category">HaxeFlixel, Flood-Fill, Grid Logic</p>
 
               </a>
             </li>
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="game development">
               <a href="https://github.com/DakshJari07/game-development-portfolio/tree/main/Pinball%20Game" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -453,7 +517,7 @@
               </a>
             </li>
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="game development">
               <a href="https://github.com/DakshJari07/game-development-portfolio/tree/main/Bowling%20Game" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -465,12 +529,12 @@
                 </figure>
 
                 <h3 class="project-title">Bowling Game</h3>
-                <p class="project-category">Unity 2D, C#, Game Physics</p>
+                <p class="project-category">Unity 2D, C#, Pin Physics</p>
 
               </a>
             </li>
 
-            <li class="project-item active">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/DakshJari07/HTML-CSS-Projects" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -478,11 +542,45 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="HTML CSS Projects" loading="lazy">
+                  <img src="./assets/images/project-6.png" alt="HTML and CSS Mini Projects" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">HTML & CSS Mini Projects</h3>
                 <p class="project-category">HTML, CSS, JavaScript, Responsive UI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data analytics">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Service Desk Ticket Analysis Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Service Desk Ticket Analysis Dashboard</h3>
+                <p class="project-category">Power BI, Excel, DAX</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data analytics">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="IT Asset Inventory Tracker" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IT Asset Inventory & Onboarding Tracker</h3>
+                <p class="project-category">Excel, Power BI</p>
 
               </a>
             </li>
@@ -527,7 +625,7 @@
 
           <p>
             Resume:
-            <a href="./assets/Daksh_Jariwala_Resume.pdf" class="contact-link" target="_blank">
+            <a href="./assets/Daksh_Jariwala_Resume.pdf" class="contact-link" target="_blank" rel="noopener noreferrer">
               Download Resume
             </a>
           </p>
