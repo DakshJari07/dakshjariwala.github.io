@@ -217,12 +217,12 @@
 
         <section class="about-text">
           <p>
-            My resume includes my education, technical skills, work experience, projects, and contact information.
-            You can view or download the PDF using the button below.
+            View my resume preview below or open the full PDF to see my education,
+            technical skills, experience, projects, and contact information.
           </p>
         </section>
 
-        <section style="margin-top: 25px;">
+        <section style="margin-top: 25px; margin-bottom: 25px;">
           <a href="./assets/Daksh_Jariwala_Resume.pdf"
              target="_blank"
              rel="noopener noreferrer"
@@ -235,8 +235,34 @@
                border-radius: 14px;
                text-decoration: none;
              ">
-            View / Download Resume
+            View / Download Full Resume
           </a>
+        </section>
+
+        <section class="resume-scroll-preview"
+                 style="
+                   max-height: 720px;
+                   overflow-y: auto;
+                   padding: 16px;
+                   border-radius: 16px;
+                   background: hsl(240, 2%, 12%);
+                   border: 1px solid hsl(0, 0%, 22%);
+                 ">
+
+          <a href="./assets/Daksh_Jariwala_Resume.pdf"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            <img src="./assets/images/resume-preview.png"
+                 alt="Daksh Jariwala Resume Preview"
+                 style="
+                   width: 100%;
+                   border-radius: 12px;
+                   display: block;
+                 ">
+
+          </a>
+
         </section>
 
       </article>
@@ -341,6 +367,23 @@
 
                 <h3 class="project-title">Bubble Shooter Game</h3>
                 <p class="project-category">HaxeFlixel, Flood-Fill, Grid Logic</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="game development">
+              <a href="https://github.com/DakshJari07/game-development-portfolio/tree/main/Pinball%20Game" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pinball-game.png" alt="Pinball Game" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pinball Game</h3>
+                <p class="project-category">Unity 2D, C#, Physics, Scoring</p>
 
               </a>
             </li>
